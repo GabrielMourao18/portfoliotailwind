@@ -1,9 +1,10 @@
+import Hero from "./assets/pages/home/sections/Hero/hero"
 function App() {
 
   return (
       <>
         <div>
-          alo dalskdj
+          <Hero></Hero>
         </div>
       </>
   )
