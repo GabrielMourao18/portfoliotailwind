@@ -4,25 +4,32 @@ type DownloadButtonProps = {
   className?: string
 }
 
-function DownloadButton({ children, onClick, className = "" }: DownloadButtonProps) {
+function DownloadButton({
+  children,
+  onClick,
+  className = "",
+}: DownloadButtonProps) {
   return (
     <button
       onClick={onClick}
       className={`
         inline-flex items-center gap-2
         w-fit
-        px-3 py-2
-        bg-white
-        text-black
+        px-4 py-2
+        bg-white text-black
+        text-sm sm:text-base font-medium
         border border-black/20
         rounded-2xl
-        hover:bg-zinc-100
-        transition
+        transition hover:bg-zinc-100
         cursor-pointer
+        focus-visible:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-white
+        focus-visible:ring-offset-2
+        focus-visible:ring-offset-sky-500
         ${className}
       `}
     >
-      {/* Ícone de download */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

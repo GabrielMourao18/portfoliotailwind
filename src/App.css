@@ -1,0 +1,15 @@
+:root{
+  --bg-gradient: linear-gradient(180deg,#1E6B88,#093656);
+}
+
+body{
+  background: var(--bg-gradient);
+}
+
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+
+.max-w-240px{max-width:240px}
+
+/* Righteous font utility */
+.font-righteous { font-family: 'Righteous', cursive; }
